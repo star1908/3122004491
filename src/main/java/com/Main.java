@@ -2,10 +2,8 @@ package com;
 
 public class Main {
     public static void main(String[] args){
-        for (String arg : args) {
-            System.out.println(arg);
-            ReadFile readFile = new ReadFile();
-            readFile.Read(arg);
-        }
+        ReadFile readFile = new ReadFile();
+        String string1 = readFile.Read(args[0]);
+        String string2 = readFile.Read(args[1]);
     }
 }
