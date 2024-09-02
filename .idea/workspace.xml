@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="写入文件功能">
+    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="完善写入文件功能，添加查重模块基础">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/OutputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OutputFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/PlagiarismChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/PlagiarismChecker.java" afterDir="false" />
     </list>
@@ -78,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725276387819</updated>
       <workItem from="1725276388919" duration="218000" />
-      <workItem from="1725276738536" duration="1732000" />
+      <workItem from="1725276738536" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="读取文件成功">
       <option name="closed" value="true" />
@@ -112,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725278312937</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完善写入文件功能，添加查重模块基础">
+      <option name="closed" value="true" />
+      <created>1725278548628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725278548628</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +129,7 @@
     <MESSAGE value="读取文件成功" />
     <MESSAGE value="完善读取文件功能" />
     <MESSAGE value="写入文件功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="写入文件功能" />
+    <MESSAGE value="完善写入文件功能，添加查重模块基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善写入文件功能，添加查重模块基础" />
   </component>
 </project>
