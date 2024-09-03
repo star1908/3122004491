@@ -1,11 +1,17 @@
-package com;
+package com.ReadWriteUtils;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class OutputFile {
-    public void Output(String url,Number ratio) {
+    /**
+     * 写出相似度到答案文件
+     * @param url 写出文本文件绝对路径
+     * @param ratio 相似度
+     * @throws IOException I/O读写异常
+     */
+    public static void Output(String url,Number ratio) throws IOException {
         try {
             // 创建FileOutputStream对象，用于将数据写入指定路径的文件
             FileOutputStream fileOutputStream = new FileOutputStream(url);
@@ -14,6 +20,7 @@ public class OutputFile {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
 
             // 将指定的字符串写入文件
+            System.out.println("论文查重率为 " + ratio + "%");
             outputStreamWriter.write("论文查重率为 " + ratio + "%");
 
             // 关闭OutputStreamWriter以确保数据正确写入并释放资源
@@ -21,7 +28,7 @@ public class OutputFile {
 
         } catch (IOException e) {
             // 如果发生I/O错误，抛出运行时异常并附带详细错误信息
-            throw new RuntimeException("文件写入失败", e);
+            throw new IOException("文件写入失败" + e);
         }
 
     }
