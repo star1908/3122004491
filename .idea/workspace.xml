@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="优化算法，添加注释，并将类按功能分模块">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/main_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/firstProject_jar.xml" beforeDir="false" />
+    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="jar打包">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,12 +44,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.HammingUtilsTest.getHammingDistance.executor": "Run",
+    "JUnit.HammingUtilsTest.getSimilarity.executor": "Run",
+    "JUnit.OutputFileTest.output.executor": "Run",
+    "JUnit.ReadFileTest.read.executor": "Run",
+    "JUnit.SimHashUtilsTest.getHash.executor": "Run",
+    "JUnit.SimHashUtilsTest.getSimHash.executor": "Run",
     "Maven.firstProject [clean].executor": "Run",
     "Maven.firstProject [install:install-file...].executor": "Run",
     "Maven.firstProject [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/大学资料/大三/软件工程项目/untitled/releases",
@@ -60,8 +69,9 @@
     "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19885057",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true",
-    "应用程序.Main.executor": "Run"
+    "应用程序.Main.executor": "Profiler#1"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,29 +81,106 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\大学资料\大三\软件工程项目\untitled\src\main\java\com" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ComputeUtils" />
+      <recent name="com.ReadWriteUtils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Exception" />
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Main" />
+  <component name="RunManager" selected="JUnit.HammingUtilsTest.getSimilarity">
+    <configuration name="HammingUtilsTest.getHammingDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstProject" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../../../test/test.txt $PROJECT_DIR$/../../../../test/test0.txt $PROJECT_DIR$/../../../../test/out.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ComputeUtils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.HammingUtilsTest" />
+      <option name="METHOD_NAME" value="getHammingDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HammingUtilsTest.getSimilarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.HammingUtilsTest" />
+      <option name="METHOD_NAME" value="getSimilarity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OutputFileTest.output" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ReadWriteUtils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ReadWriteUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ReadWriteUtils.OutputFileTest" />
+      <option name="METHOD_NAME" value="output" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimHashUtilsTest.getHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.SimHashUtilsTest" />
+      <option name="METHOD_NAME" value="getHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimHashUtilsTest.getSimHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.SimHashUtilsTest" />
+      <option name="METHOD_NAME" value="getSimHash" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
+        <item itemvalue="JUnit.HammingUtilsTest.getSimilarity" />
+        <item itemvalue="JUnit.HammingUtilsTest.getHammingDistance" />
+        <item itemvalue="JUnit.SimHashUtilsTest.getSimHash" />
+        <item itemvalue="JUnit.SimHashUtilsTest.getHash" />
+        <item itemvalue="JUnit.OutputFileTest.output" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +202,8 @@
       <workItem from="1725276388919" duration="218000" />
       <workItem from="1725276738536" duration="8679000" />
       <workItem from="1725317171312" duration="4733000" />
-      <workItem from="1725322925290" duration="445000" />
+      <workItem from="1725322925290" duration="1405000" />
+      <workItem from="1725324413742" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="读取文件成功">
       <option name="closed" value="true" />
@@ -181,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725322625161</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="jar打包">
+      <option name="closed" value="true" />
+      <created>1725323487178</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725323487178</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +290,7 @@
     <MESSAGE value="完善写入文件功能，添加查重模块基础" />
     <MESSAGE value="基于Simhash 海明距离的论文查重算法" />
     <MESSAGE value="优化算法，添加注释，并将类按功能分模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化算法，添加注释，并将类按功能分模块" />
+    <MESSAGE value="jar打包" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar打包" />
   </component>
 </project>
