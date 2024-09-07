@@ -20,8 +20,8 @@ public class OutputFile {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
 
             // 将指定的字符串写入文件
-            System.out.println("论文查重率为 " + ratio + "%");
-            outputStreamWriter.write("论文查重率为 " + ratio + "%");
+            System.out.println("论文查重率为 " + String.format("%.2f",ratio) + "%");
+            outputStreamWriter.write("论文查重率为 " + String.format("%.2f",ratio) + "%");
 
             // 关闭OutputStreamWriter以确保数据正确写入并释放资源
             outputStreamWriter.close();

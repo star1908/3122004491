@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="jar打包">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="49ee3fe3-9b64-4a32-8978-037bcae79e0f" name="更改" comment="简要测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Exception/InsufficientParametersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Exception/InsufficientParametersException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Exception/TextShortException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Exception/TextShortException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ReadWriteUtils/OutputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ReadWriteUtils/OutputFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ReadWriteUtils/ReadFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ReadWriteUtils/ReadFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,38 +45,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.HammingUtilsTest.getHammingDistance.executor": "Run",
-    "JUnit.HammingUtilsTest.getSimilarity.executor": "Run",
-    "JUnit.OutputFileTest.output.executor": "Run",
-    "JUnit.ReadFileTest.read.executor": "Run",
-    "JUnit.SimHashUtilsTest.getHash.executor": "Run",
-    "JUnit.SimHashUtilsTest.getSimHash.executor": "Run",
-    "Maven.firstProject [clean].executor": "Run",
-    "Maven.firstProject [install:install-file...].executor": "Run",
-    "Maven.firstProject [package].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/大学资料/大三/软件工程项目/untitled/releases",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.19885057",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.Main.executor": "Profiler#1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BaseExceptionTest.test.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.HammingUtilsTest.getHammingDistance.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.HammingUtilsTest.getSimilarity.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.main.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.OutputFileTest.output.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadFileTest.read.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimHashUtilsTest.getHash.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimHashUtilsTest.getSimHash.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextShortExceptionTest.test.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.firstProject中的com.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.firstProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.firstProject [install:install-file...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.firstProject [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/大学资料/大三/软件工程项目/untitled/releases&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19885057&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\大学资料\大三\软件工程项目\untitled\src\main\java\com" />
@@ -85,6 +93,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com" />
+      <recent name="com.Exception" />
       <recent name="com.ComputeUtils" />
       <recent name="com.ReadWriteUtils" />
     </key>
@@ -93,40 +103,38 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HammingUtilsTest.getSimilarity">
-    <configuration name="HammingUtilsTest.getHammingDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="firstProject" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../../../test/orig.txt $PROJECT_DIR$/../../../../test/test.txt $PROJECT_DIR$/../../../../test/out.txt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
-      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.HammingUtilsTest" />
-      <option name="METHOD_NAME" value="getHammingDistance" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.MainTest" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HammingUtilsTest.getSimilarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="firstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ComputeUtils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
-      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.HammingUtilsTest" />
-      <option name="METHOD_NAME" value="getSimilarity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OutputFileTest.output" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstProject" />
       <extension name="coverage">
         <pattern>
@@ -135,52 +143,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ReadWriteUtils" />
-      <option name="MAIN_CLASS_NAME" value="com.ReadWriteUtils.OutputFileTest" />
-      <option name="METHOD_NAME" value="output" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.ReadWriteUtils.ReadFileTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimHashUtilsTest.getHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadFileTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="PATTERN" value="com.ReadWriteUtils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
-      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.SimHashUtilsTest" />
-      <option name="METHOD_NAME" value="getHash" />
+      <option name="PACKAGE_NAME" value="com.ReadWriteUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.ReadWriteUtils.ReadFileTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimHashUtilsTest.getSimHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="firstProject中的com" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ComputeUtils.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ComputeUtils" />
-      <option name="MAIN_CLASS_NAME" value="com.ComputeUtils.SimHashUtilsTest" />
-      <option name="METHOD_NAME" value="getSimHash" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.firstProject中的com" />
+      <item itemvalue="JUnit.MainTest.main" />
+      <item itemvalue="JUnit.ReadFileTest" />
+      <item itemvalue="JUnit.ReadFileTest.read" />
+      <item itemvalue="应用程序.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HammingUtilsTest.getSimilarity" />
-        <item itemvalue="JUnit.HammingUtilsTest.getHammingDistance" />
-        <item itemvalue="JUnit.SimHashUtilsTest.getSimHash" />
-        <item itemvalue="JUnit.SimHashUtilsTest.getHash" />
-        <item itemvalue="JUnit.OutputFileTest.output" />
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="JUnit.firstProject中的com" />
+        <item itemvalue="JUnit.ReadFileTest" />
+        <item itemvalue="JUnit.ReadFileTest.read" />
+        <item itemvalue="JUnit.MainTest.main" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +215,8 @@
       <workItem from="1725276738536" duration="8679000" />
       <workItem from="1725317171312" duration="4733000" />
       <workItem from="1725322925290" duration="1405000" />
-      <workItem from="1725324413742" duration="2418000" />
+      <workItem from="1725324413742" duration="6638000" />
+      <workItem from="1725407489540" duration="2464000" />
     </task>
     <task id="LOCAL-00001" summary="读取文件成功">
       <option name="closed" value="true" />
@@ -277,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725323487178</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="简要测试">
+      <option name="closed" value="true" />
+      <created>1725326879390</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725326879390</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +312,24 @@
     <MESSAGE value="基于Simhash 海明距离的论文查重算法" />
     <MESSAGE value="优化算法，添加注释，并将类按功能分模块" />
     <MESSAGE value="jar打包" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar打包" />
+    <MESSAGE value="简要测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="简要测试" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$BaseExceptionTest_test.ic" NAME="BaseExceptionTest.test 覆盖结果" MODIFIED="1725327266735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Exception.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/untitled$firstProjectcom.ic" NAME="firstProject中的com 覆盖结果" MODIFIED="1725331569655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/untitled$TextShortExceptionTest_test.ic" NAME="TextShortExceptionTest.test 覆盖结果" MODIFIED="1725327392119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Exception.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/untitled$MainTest_main.ic" NAME="MainTest.main 覆盖结果" MODIFIED="1725330890376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/untitled$HammingUtilsTest_getHammingDistance.ic" NAME="HammingUtilsTest.getHammingDistance 覆盖结果" MODIFIED="1725327064329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ComputeUtils.*</FILTER>
+    </SUITE>
   </component>
 </project>
